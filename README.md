@@ -1,1 +1,1 @@
-# CUPS-Chemsoc_Workshop
+# CUPS Chemsoc LaTeX & Github Workshop
