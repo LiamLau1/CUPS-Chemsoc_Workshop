@@ -2,7 +2,52 @@
 
 Commit Test
 
-## Github
+## Github - a very brief introduction
+
+# What's the point?
+- local data backups
+- timeline of everything
+- work on two different versions simultaneously
+- collaboration
+- primary purpose for programmming, good for course notes, CV (LaTeX) e.t.c.
+- used in virtually EVERY programming job
+
+# GitHub
+- what is github
+- other providers exist, GitHub is the largest
+
+# Create and clone new repository
+
+Clone copies and downloads the latest version of the project, along with the projects entire history onto your local machine.
+
+- `git clone https://github.com/LiamLau1/CUPS-Chemsoc_Workshop` 
+- `git clone https://github.com/{USERNAME}/{PROJECT-NAME}`
+
+
+# Push to repository with commit messages
+Add your files
+`git add {filename}`
+`git add --all`
+
+Commit your changes
+`git commit`
+
+Push your changes
+`git push origin master`
+
+# Git log + backtracking
+Past history of commits:
+`git log`
+
+Go back in time:
+`git checkout {HASH FROM LOG}`
+
+
+# More information
+- branching
+- collaboration
+- [Git Book](https://git-scm.com/book/en/v2)
+
 
 ## LaTeX
 
