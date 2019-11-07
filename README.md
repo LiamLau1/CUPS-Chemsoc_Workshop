@@ -1,6 +1,5 @@
 # CUPS and Chemsoc joint LaTeX & Github Workshop
 
-Commit Test
 
 ## Github - a very brief introduction
 
@@ -51,3 +50,9 @@ Go back in time:
 
 ## LaTeX
 
+Checkout the getting started with LaTeX document in this repository.
+We'll be adding some useful commands here for you to remember after the talk.
+
+# Useful Links
+- [Overleaf](https://www.overleaf.com)
+-
