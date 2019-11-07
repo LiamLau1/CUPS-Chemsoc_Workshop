@@ -59,4 +59,3 @@ We'll be adding some useful commands here for you to remember after the talk.
 # Useful Links
 Sign-up for an account to Overleaf, an online LaTeX editor here:
 - [Overleaf](https://www.overleaf.com)
--
