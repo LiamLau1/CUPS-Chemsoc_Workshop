@@ -15,6 +15,9 @@
 - what is github
 - other providers exist, GitHub is the largest
 
+Sign-up for an account to GitHub here:
+- [GitHub](https://github.com)
+
 # Create and clone new repository
 
 Clone copies and downloads the latest version of the project, along with the projects entire history onto your local machine.
@@ -54,5 +57,6 @@ Checkout the getting started with LaTeX document in this repository.
 We'll be adding some useful commands here for you to remember after the talk.
 
 # Useful Links
+Sign-up for an account to Overleaf, an online LaTeX editor here:
 - [Overleaf](https://www.overleaf.com)
 -
