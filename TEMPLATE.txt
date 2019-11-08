@@ -1,0 +1,89 @@
+%Welcome to your first LaTeX file! This grayed out text is what coders call a COMMENT. In the rest of the document, the comments will provide you with instructions on what to do. Feel free to play around!
+
+%LaTeX is essentially a coding language, where your code is a set of instructions, which the machine compiles to produce an output file. The code is saved in a .tex format, while the output is usually a .pdf file.    
+
+%Comments are used to improve readability of the code. The compiler completely ignores them, are only meant to be read by any human reading the source code. Add a percent ' % ' sign at the start of a line to turn it into a comment.
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb} %this enables you to use more symbols 
+\usepackage{amsmath} %this is important for commands involving maths
+\usepackage{enumerate} %this is important to customize lists
+\usepackage{graphicx} %this is important to insert images
+\graphicspath{{./images/}}
+%TITLE BLOCK
+\title{Your First \LaTeX document}
+%\author{ %your name }
+%\date{ %the date }
+%END OF TITLE BLOCK
+
+\begin{document} %everything after this point is in the main document
+
+\maketitle %adds everything in the title block 
+
+\pagebreak %does exactly what it says
+
+\tableofcontents %automatically generates a table of contents
+\pagebreak
+
+\section{Organizing the document} %creates an automatically numbered section
+%can add any text you want here
+\section{More Sections}
+%text
+\subsection{And Subsections}
+%text
+\subsubsection{...and subsubsections}
+%text
+\section{Adding Text}
+You can type normally, without worrying about line breaks. The compiler automatically word-wraps. 
+In fact, it ignores any single linebreaks (enter key) so you can liberally use it to 
+organize 
+your 
+code 
+nicely.
+
+Double linebreaks (enter twice) however starts a new paragraph, with an indent. You can use this if you like, but I personally prefer to manually add linebreaks using double-slash (\textbackslash \textbackslash  )  \\ Ok can you see the difference? \\ \\ You can combine multiple of these to get bigger paragraph breaks!
+
+\subsection{Formatting text}
+You can use \textbackslash textbf\{\}, \textbackslash textit\{\} and \textbackslash underline\{\} to get \textbf{bold}, \textit{italic} and \underline{underlined} text. \textbf{\textit{\underline {Can combine multiple of these just as you would!}}} \\ \\ There is also a fourth option (among many others), which lets you type \texttt{like this}, in a monospace font. Use \textbackslash texttt\{\} for this. 
+
+\subsection{And making lists}
+You can create Numbered lists using \\ \\ \textbackslash begin\{enumerate\} \\ \vdots \\ \textbackslash end\{enumerate\} \\ \\ and bulleted lists using \\ \\ \textbackslash begin\{itemize\} \\ \vdots \\ \textbackslash end\{itemize\}. \\
+\begin{enumerate}
+    \item Add a \textbackslash item at the start of every new line
+    \item and keep adding items till you're done
+    \item like this.
+    \item In fact you can also change the numbering pattern by adding a [\texttt{numbering style}] after your \textbackslash begin \{enumerate\} command. 
+    \item Try adding [i)], [I.] and [(a)] to this block and see how things change!
+    \item  and you can have
+    \begin{enumerate}
+        \item nested 
+        \item lists!
+        \item Yay,
+            \begin{enumerate}
+            \item how cool 
+            \item is that!
+            \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+\\ You can also have bulleted lists:
+\begin{itemize}
+    \item \textit{itemize} works similarly, except with bullets.
+    \item[$\square$] It can also be customized- try adding [\$ \textbackslash square \$] after every \textbackslash item.
+    \item[$\circ$] or [\$ \textbackslash circ \$]
+    \item[$\star$] or [\$ \textbackslash star \$]
+    \item[$\star$] because that's what you are!
+\end{itemize}
+\section{And Maths}
+Because thats what \LaTeX \space excels at! \\ \\ You can add maths in-line by using \$ \dots \$, like $2+2$ is $4$, $-1$ that's $3$ quick maffs. This is your bread and butter when typing mathematical papers. You can do anything from in line fractions $\frac{1}{2}$ to integrals $\int x^2 dx$. (Tip: using \textbackslash dfrac instead of \textbackslash frac adjusts it so that the fraction is not squished to fit the line.)
+\\ If you want your equation to start on a new line, you use \$\$ \dots \$\$. This helps in emphasizing equations $$\forall x \exists y : x=y.$$ If you want multiple equations in a centred block, you can use \textbackslash begin \{align\}, ending each line with a \textbackslash \textbackslash. You can add '&' to each line, and the equations will be aligned such that the symbols after the &s are one below the other: \begin{align}
+    1+(2+3)*4&=1+5*4 \\ &= 1+9 \\ &= 10
+\end{align}
+You can instruct the compiler not to number the equations by adding an asterix (*) after the 'align'. In fact, this works with \textbackslash section too, most commands turn into an un-numbered version when combined with an asterix (Try it!)
+
+\section{Images}
+This is an interesting feature, I did not know \LaTeX could handle images too. Latex can not manage images by itself, so we need to use the graphicx package. To use it, we include the following line in the preamble: \textbackslash usepackage\{graphicx\}. The command \textbackslash graphicspath \{\{./images/\}\} tells LATEX that the images are kept in a folder named images under the directory of the main document.Use the \textbackslash includegraphics\{*filename*\} command to insert the image. The file name of the image should not contain white spaces nor multiple dots. \\ \\ \includegraphics[scale=0.5]{144}
+
+\section{General Alignment}
+To center a block of text, images etc simply add a \textbackslash begin\{center\} and \textbackslash end\{center\} around it. Other commands that work similarly are tiny, huge, quote and verbatim. 
+\end{document}
